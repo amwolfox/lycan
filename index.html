@@ -145,58 +145,82 @@
                 id: 0,
                 date: "PROTOCOL 11.06.2026",
                 title: "About Me",
-                readTime: "1 min read",
                 file: "posts/post-0.html"
             },
             {
                 id: 1,
                 date: "PROTOCOL 24.06.2026",
                 title: "Know Yourself",
-                readTime: "2 min read",
                 file: "posts/post-1.html"
             },
             {
                 id: 2,
                 date: "PROTOCOL 01.07.2026",
                 title: "Purpose of your Life",
-                readTime: "3 min read",
                 file: "posts/post-2.html"
             },
             {
                 id: 3,
                 date: "PROTOCOL 19.07.2026",
                 title: "Gita: The Survival Instinct",
-                readTime: "23 min read",
                 file: "posts/post-3.html"
             },
             {
-                
                 id: 4,
                 date: "PROTOCOL 12.10.2026",
                 title: "The Art of Living with the Absurd",
-                readTime: "5 min read",
                 file: "posts/post-4.html"
             },
             {
-                
                 id: 5,
                 date: "PROTOCOL 12.10.2026",
                 title: "Movies",
-                readTime: "2 min read",
                 file: "posts/post-5.html"
             }
         ];
 
-        function unlock() {
+        const READING_SPEED_WPM = 200;
+
+        function getReadTimeFromHtml(html) {
+            const text = html
+                .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+                .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+                .replace(/<[^>]+>/g, ' ')
+                .replace(/&nbsp;/gi, ' ')
+                .replace(/&amp;/gi, ' & ')
+                .replace(/[^\w\s]/g, ' ')
+                .toLowerCase();
+
+            const wordCount = text.trim() ? text.trim().split(/\s+/).filter(Boolean).length : 0;
+            const minutes = Math.max(1, Math.ceil(wordCount / READING_SPEED_WPM));
+            return `${minutes} min read`;
+        }
+
+        async function loadReadTimes() {
+            for (const entry of blogEntries) {
+                try {
+                    const res = await fetch(entry.file);
+                    if (!res.ok) continue;
+                    const html = await res.text();
+                    entry.readTime = getReadTimeFromHtml(html);
+                } catch (error) {
+                    console.error(`Could not calculate read time for ${entry.file}`, error);
+                    entry.readTime = '1 min read';
+                }
+            }
+        }
+
+        async function unlock() {
             const gate = document.getElementById('gate');
             gate.style.opacity = '0';
             gate.style.transform = 'translateY(-20px)';
 
-            setTimeout(() => {
+            setTimeout(async () => {
                 gate.style.display = 'none';
                 document.body.classList.remove('flex', 'items-center', 'justify-center');
                 const main = document.getElementById('main-ui');
                 main.style.display = 'block';
+                await loadReadTimes();
                 render();
                 setTimeout(() => main.classList.add('animate-fade'), 50);
             }, 800);
@@ -211,7 +235,7 @@
                     <div onclick="showPost(${p.id})" class="glass p-10 rounded-[2.5rem] cursor-pointer border-white/5 hover:border-red-900/50 transition-all duration-700 group">
                         <span class="text-[10px] text-red-900 tracking-[0.3em] font-bold uppercase">${p.date}</span>
                         <h3 class="serif text-2xl mt-6 group-hover:text-red-700 transition-colors duration-500">${p.title}</h3>
-                        <p class="text-[10px] uppercase tracking-[0.35em] text-zinc-500 mt-4">${p.readTime}</p>
+                        <p class="text-[10px] uppercase tracking-[0.35em] text-zinc-500 mt-4">${p.readTime || '1 min read'}</p>
                         <div class="w-8 h-px bg-zinc-800 mt-6 group-hover:w-16 group-hover:bg-red-900 transition-all duration-700"></div>
                         <p class="text-zinc-500 text-xs mt-6 line-clamp-2 leading-relaxed uppercase tracking-widest font-light">Decrypting internal data stream...</p>
                     </div>
