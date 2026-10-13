@@ -4,499 +4,74 @@
 <p class="text-[10px] tracking-[0.35em] uppercase text-zinc-400 mb-8">Total Movies: <span id="total-movies-count">0</span></p>
 <div class="w-12 h-px bg-zinc-800 my-8"></div>
 
-<section class="mb-12 border-l border-zinc-800 hover:border-red-900/50 transition-colors pl-6">
-    <button class="dropdown-toggle w-full flex items-center justify-between text-left text-[12px] sm:text-sm tracking-[0.2em] font-mono text-[#B91C1C] mb-4 font-extrabold uppercase" data-target="best-list">
-        <span>BEST</span>
-        <span class="dropdown-arrow text-lg leading-none">+</span>
-    </button>
-    <ul id="best-list" class="dropdown-content hidden m-0 p-0 list-none space-y-2">
-        <li class="text-zinc-300 text-sm md:text-base">The Basketball Diaries</li>
-        <li class="text-zinc-300 text-sm md:text-base">Climax</li>
-        <li class="text-zinc-300 text-sm md:text-base">Enter the Void</li>
-        <li class="text-zinc-300 text-sm md:text-base">Memento</li>
-        <li class="text-zinc-300 text-sm md:text-base">Unfriended Dark Web</li>
-        <li class="text-zinc-300 text-sm md:text-base">American Hustle</li>
-        <li class="text-zinc-300 text-sm md:text-base">American Psycho</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Machinist</li>
-        <li class="text-zinc-300 text-sm md:text-base">Batman Begins</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Dark Knight</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Dark Knight Rises</li>
-        <li class="text-zinc-300 text-sm md:text-base">Inception</li>
-        <li class="text-zinc-300 text-sm md:text-base">Dunkirk</li>
-        <li class="text-zinc-300 text-sm md:text-base">Child 44</li>
-        <li class="text-zinc-300 text-sm md:text-base">John Wick-4</li>
-        <li class="text-zinc-300 text-sm md:text-base">Lucy</li>
-        <li class="text-zinc-300 text-sm md:text-base">Matrix-All Part</li>
-        <li class="text-zinc-300 text-sm md:text-base">Jack Reacher</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Departed</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Prestige</li>
-        <li class="text-zinc-300 text-sm md:text-base">Pet Sematary</li>
-        <li class="text-zinc-300 text-sm md:text-base">No Country for Old Men</li>
-        <li class="text-zinc-300 text-sm md:text-base">Dead Silence</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Others</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Changelling</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Soul</li>
-        <li class="text-zinc-300 text-sm md:text-base">Oldboy</li>
-        <li class="text-zinc-300 text-sm md:text-base">Hacksaw Ridge</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Imitation Game</li>
-        <li class="text-zinc-300 text-sm md:text-base">Come and See(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">28 men 28 Heroes(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Brest Fortress(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">Stalingard-1993(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">Liberation-5(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Photographer of Mauthausen</li>
-        <li class="text-zinc-300 text-sm md:text-base">The curious case of Benjamin Button</li>
-        <li class="text-zinc-300 text-sm md:text-base">Shawshank Redemption</li>
-        <li class="text-zinc-300 text-sm md:text-base">Shutter Island</li>
-        <li class="text-zinc-300 text-sm md:text-base">Zodiac</li>
-        <li class="text-zinc-300 text-sm md:text-base">The devil all the time</li>
-        <li class="text-zinc-300 text-sm md:text-base">Seven</li>
-        <li class="text-zinc-300 text-sm md:text-base">Nightcrawler</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sherlock Holmes</li>
-        <li class="text-zinc-300 text-sm md:text-base">Joker</li>
-        <li class="text-zinc-300 text-sm md:text-base">Hangover</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Dictator</li>
-        <li class="text-zinc-300 text-sm md:text-base">Horrible Bosses 2</li>
-        <li class="text-zinc-300 text-sm md:text-base">Fun with Dick &amp; Jane</li>
-        <li class="text-zinc-300 text-sm md:text-base">Dumb and Dumber1</li>
-        <li class="text-zinc-300 text-sm md:text-base">Superbad</li>
-        <li class="text-zinc-300 text-sm md:text-base">Titanic</li>
-        <li class="text-zinc-300 text-sm md:text-base">12 years a Slave</li>
-        <li class="text-zinc-300 text-sm md:text-base">The pursuit of happiness</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Wailing</li>
-        <li class="text-zinc-300 text-sm md:text-base">Blade Runner 2049</li>
-        <li class="text-zinc-300 text-sm md:text-base">The boys in Striped Pyjamas</li>
-        <li class="text-zinc-300 text-sm md:text-base">Perfume</li>
-        <li class="text-zinc-300 text-sm md:text-base">Harry Porter[1-7.2]</li>
-        <li class="text-zinc-300 text-sm md:text-base">One Flew Over The Cuckoo's Nest (1975)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Pianist (2002)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Silence of the lambs</li>
-        <li class="text-zinc-300 text-sm md:text-base">Red Dragon</li>
-        <li class="text-zinc-300 text-sm md:text-base">Drive</li>
-        <li class="text-zinc-300 text-sm md:text-base">Eyes wide shut</li>
-        <li class="text-zinc-300 text-sm md:text-base">Donnie Darko</li>
-        <li class="text-zinc-300 text-sm md:text-base">Silenced (Korean)</li>
-        <li class="text-zinc-300 text-sm md:text-base">Pearl</li>
-        <li class="text-zinc-300 text-sm md:text-base">Requiem for a Dream</li>
-        <li class="text-zinc-300 text-sm md:text-base">Orphan</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sophie's Choice</li>
-        <li class="text-zinc-300 text-sm md:text-base">taxi driver</li>
-        <li class="text-zinc-300 text-sm md:text-base">The great gatsby</li>
-        <li class="text-zinc-300 text-sm md:text-base">american beauty</li>
-        <li class="text-zinc-300 text-sm md:text-base">the clockwork orange</li>
-        <li class="text-zinc-300 text-sm md:text-base">High Life</li>
-        <li class="text-zinc-300 text-sm md:text-base">Chaser</li>
-        <li class="text-zinc-300 text-sm md:text-base">Shame</li>
-        <li class="text-zinc-300 text-sm md:text-base">Jojo Rabbit</li>
-        <li class="text-zinc-300 text-sm md:text-base">Casino</li>
-        <li class="text-zinc-300 text-sm md:text-base">Heat</li>
-                <li class="text-zinc-300 text-sm md:text-base">Suspiria</li>
+<div id="movie-categories"></div>
 
-    </ul>
-</section>
+<div id="movie-categories"></div>
 
-<section class="mb-12 border-l border-zinc-800 hover:border-red-900/50 transition-colors pl-6">
-    <button class="dropdown-toggle w-full flex items-center justify-between text-left text-[12px] sm:text-sm tracking-[0.2em] font-mono text-[#B91C1C] mb-4 font-extrabold uppercase" data-target="good-list">
-        <span>GOOD</span>
-        <span class="dropdown-arrow text-lg leading-none">+</span>
-    </button>
-    <ul id="good-list" class="dropdown-content hidden m-0 p-0 list-none space-y-2">
-        <li class="text-zinc-300 text-sm md:text-base">Knives Out</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Lighthouse</li>
-        <li class="text-zinc-300 text-sm md:text-base">Irreversible</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Shinning</li>
-        <li class="text-zinc-300 text-sm md:text-base">Dark Web</li>
-        <li class="text-zinc-300 text-sm md:text-base">Unfriended</li>
-        <li class="text-zinc-300 text-sm md:text-base">Out of the Furnace</li>
-        <li class="text-zinc-300 text-sm md:text-base">Equilibrium</li>
-        <li class="text-zinc-300 text-sm md:text-base">Ford vs Ferrari</li>
-        <li class="text-zinc-300 text-sm md:text-base">Venom</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Revenant</li>
-        <li class="text-zinc-300 text-sm md:text-base">Mad Max-Fury</li>
-        <li class="text-zinc-300 text-sm md:text-base">Godzilla: King of the Monsters</li>
-        <li class="text-zinc-300 text-sm md:text-base">Kong vs Godzilla</li>
-        <li class="text-zinc-300 text-sm md:text-base">John Wick-1</li>
-        <li class="text-zinc-300 text-sm md:text-base">John Wick-2</li>
-        <li class="text-zinc-300 text-sm md:text-base">John Wick-3</li>
-        <li class="text-zinc-300 text-sm md:text-base">Escape Plan</li>
-        <li class="text-zinc-300 text-sm md:text-base">6 Underground</li>
-        <li class="text-zinc-300 text-sm md:text-base">Now you see Me-1</li>
-        <li class="text-zinc-300 text-sm md:text-base">Death Race</li>
-        <li class="text-zinc-300 text-sm md:text-base">Suicide Squad</li>
-        <li class="text-zinc-300 text-sm md:text-base">Edge of Tommorow</li>
-        <li class="text-zinc-300 text-sm md:text-base">Dracula Untold</li>
-        <li class="text-zinc-300 text-sm md:text-base">Aquaman</li>
-        <li class="text-zinc-300 text-sm md:text-base">Triple Frontier</li>
-        <li class="text-zinc-300 text-sm md:text-base">Inglorious Bastards</li>
-        <li class="text-zinc-300 text-sm md:text-base">Seventh Son</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Mummy</li>
-        <li class="text-zinc-300 text-sm md:text-base">World War Z</li>
-        <li class="text-zinc-300 text-sm md:text-base">1922</li>
-        <li class="text-zinc-300 text-sm md:text-base">Triangle</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Nun</li>
-        <li class="text-zinc-300 text-sm md:text-base">Anabelle Comes Home</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Ring</li>
-        <li class="text-zinc-300 text-sm md:text-base">Poltergeist</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Witch</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Ritual</li>
-        <li class="text-zinc-300 text-sm md:text-base">Apostle</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Perfection</li>
-        <li class="text-zinc-300 text-sm md:text-base">Don’t Breathe</li>
-        <li class="text-zinc-300 text-sm md:text-base">Don’t Breathe2</li>
-        <li class="text-zinc-300 text-sm md:text-base">Bird Box</li>
-        <li class="text-zinc-300 text-sm md:text-base">In the Tall Grass</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Invitation</li>
-        <li class="text-zinc-300 text-sm md:text-base">Hush</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Evil Dead</li>
-        <li class="text-zinc-300 text-sm md:text-base">Before i Wake</li>
-        <li class="text-zinc-300 text-sm md:text-base">Underwater</li>
-        <li class="text-zinc-300 text-sm md:text-base">Don’t Listen</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Conjuriing</li>
-        <li class="text-zinc-300 text-sm md:text-base">Light’s Out</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sinister1</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sinister2</li>
-        <li class="text-zinc-300 text-sm md:text-base">Ouija</li>
-        <li class="text-zinc-300 text-sm md:text-base">Howl</li>
-        <li class="text-zinc-300 text-sm md:text-base">Mortal Combat</li>
-        <li class="text-zinc-300 text-sm md:text-base">Night in the Paradise</li>
-        <li class="text-zinc-300 text-sm md:text-base">Parasite</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Call</li>
-        <li class="text-zinc-300 text-sm md:text-base">Bullet Head</li>
-        <li class="text-zinc-300 text-sm md:text-base">Blade of the Immortal</li>
-        <li class="text-zinc-300 text-sm md:text-base">Outlaw King</li>
-        <li class="text-zinc-300 text-sm md:text-base">Forgotten</li>
-        <li class="text-zinc-300 text-sm md:text-base">Time to Hunt</li>
-        <li class="text-zinc-300 text-sm md:text-base">The King</li>
-        <li class="text-zinc-300 text-sm md:text-base">Assassin’s Creed</li>
-        <li class="text-zinc-300 text-sm md:text-base">Silence</li>
-        <li class="text-zinc-300 text-sm md:text-base">Rise of the legends</li>
-        <li class="text-zinc-300 text-sm md:text-base">1917</li>
-        <li class="text-zinc-300 text-sm md:text-base">Fury</li>
-        <li class="text-zinc-300 text-sm md:text-base">300</li>
-        <li class="text-zinc-300 text-sm md:text-base">Army of Shadows</li>
-        <li class="text-zinc-300 text-sm md:text-base">Act of Valor</li>
-        <li class="text-zinc-300 text-sm md:text-base">Schindler’s List</li>
-        <li class="text-zinc-300 text-sm md:text-base">Stalker(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">White Tiger(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">No Right to Choose(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">T-34(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">72 Hours(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Tank(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Ascent(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">Demoted(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Road to Berlin(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">In August 44(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">White Sun of Desert(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">Valkyrie</li>
-        <li class="text-zinc-300 text-sm md:text-base">Bridge of Spies</li>
-        <li class="text-zinc-300 text-sm md:text-base">Escape from Stalin’s Death Camp</li>
-        <li class="text-zinc-300 text-sm md:text-base">Pulp Fiction</li>
-        <li class="text-zinc-300 text-sm md:text-base">The 12th Man</li>
-        <li class="text-zinc-300 text-sm md:text-base">Ivan’s Childhood(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">Da 5 Bloods</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Autopsy of jane doe</li>
-        <li class="text-zinc-300 text-sm md:text-base">Kingsman: The Secret Service</li>
-        <li class="text-zinc-300 text-sm md:text-base">Seven Smurai</li>
-        <li class="text-zinc-300 text-sm md:text-base">Final Destination[1-5]</li>
-        <li class="text-zinc-300 text-sm md:text-base">The ruins</li>
-        <li class="text-zinc-300 text-sm md:text-base">Fifty Shades of grey</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Place beyond the pines</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Mule</li>
-        <li class="text-zinc-300 text-sm md:text-base">Lost Girls</li>
-        <li class="text-zinc-300 text-sm md:text-base">Budapest</li>
-        <li class="text-zinc-300 text-sm md:text-base">Horrible Bosses</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Change-Up</li>
-        <li class="text-zinc-300 text-sm md:text-base">Bad Neighbors</li>
-        <li class="text-zinc-300 text-sm md:text-base">Game Over, Man!</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Do-Over</li>
-        <li class="text-zinc-300 text-sm md:text-base">Identity Thief</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Other Guys</li>
-        <li class="text-zinc-300 text-sm md:text-base">American Pie[All]</li>
-        <li class="text-zinc-300 text-sm md:text-base">21 &amp; Over</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Mask</li>
-        <li class="text-zinc-300 text-sm md:text-base">Ace Ventura</li>
-        <li class="text-zinc-300 text-sm md:text-base">Calibre</li>
-        <li class="text-zinc-300 text-sm md:text-base">Fractured</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Woman in the Window</li>
-        <li class="text-zinc-300 text-sm md:text-base">Avatar</li>
-        <li class="text-zinc-300 text-sm md:text-base">Taken</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Call- American</li>
-        <li class="text-zinc-300 text-sm md:text-base">Split</li>
-        <li class="text-zinc-300 text-sm md:text-base">Glass</li>
-        <li class="text-zinc-300 text-sm md:text-base">Exam</li>
-        <li class="text-zinc-300 text-sm md:text-base">Mirage</li>
-        <li class="text-zinc-300 text-sm md:text-base">Django Unchained</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Good the bad the ugly</li>
-        <li class="text-zinc-300 text-sm md:text-base">Journey’s End</li>
-        <li class="text-zinc-300 text-sm md:text-base">i saw the devil</li>
-        <li class="text-zinc-300 text-sm md:text-base">Change Up</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sucide Squad-1</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sucide Squad-2</li>
-        <li class="text-zinc-300 text-sm md:text-base">Constantine</li>
-        <li class="text-zinc-300 text-sm md:text-base">Insidious</li>
-        <li class="text-zinc-300 text-sm md:text-base">Kingdom</li>
-        <li class="text-zinc-300 text-sm md:text-base">Blood Red Sky</li>
-        <li class="text-zinc-300 text-sm md:text-base">El Camino</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Inbetweeners</li>
-        <li class="text-zinc-300 text-sm md:text-base">Of Fathers and Sons</li>
-        <li class="text-zinc-300 text-sm md:text-base">Hostel</li>
-        <li class="text-zinc-300 text-sm md:text-base">Major Grom: Plague Doctor</li>
-        <li class="text-zinc-300 text-sm md:text-base">Aftermath</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Good Liar</li>
-        <li class="text-zinc-300 text-sm md:text-base">Kingdom: Ashin of the North</li>
-        <li class="text-zinc-300 text-sm md:text-base">Munich</li>
-        <li class="text-zinc-300 text-sm md:text-base">The After Party</li>
-        <li class="text-zinc-300 text-sm md:text-base">Pilgrimage</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Pledge</li>
-        <li class="text-zinc-300 text-sm md:text-base">Malignant</li>
-        <li class="text-zinc-300 text-sm md:text-base">The House that Jack Built</li>
-        <li class="text-zinc-300 text-sm md:text-base">Oliver Twist</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Huntsman: Winter's War</li>
-        <li class="text-zinc-300 text-sm md:text-base">Snow White &amp; the Huntsman</li>
-        <li class="text-zinc-300 text-sm md:text-base">Van Helsing</li>
-        <li class="text-zinc-300 text-sm md:text-base">King Arthur Legend Of the Sword</li>
-        <li class="text-zinc-300 text-sm md:text-base">The 8th Night</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Unholy</li>
-        <li class="text-zinc-300 text-sm md:text-base">Hypnotic</li>
-        <li class="text-zinc-300 text-sm md:text-base">Night Teeth</li>
-        <li class="text-zinc-300 text-sm md:text-base">There's Someone Inside Your House</li>
-        <li class="text-zinc-300 text-sm md:text-base">Kate</li>
-        <li class="text-zinc-300 text-sm md:text-base">As Above, So Below</li>
-        <li class="text-zinc-300 text-sm md:text-base">12 Angry Men (1957)</li>
-        <li class="text-zinc-300 text-sm md:text-base">the shadow in my eye</li>
-        <li class="text-zinc-300 text-sm md:text-base">the green inferno</li>
-        <li class="text-zinc-300 text-sm md:text-base">cheap thrills</li>
-        <li class="text-zinc-300 text-sm md:text-base">I origins</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sicario 1</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sicario 2</li>
-        <li class="text-zinc-300 text-sm md:text-base">The usual suspect</li>
-        <li class="text-zinc-300 text-sm md:text-base">Elite Squad-1</li>
-        <li class="text-zinc-300 text-sm md:text-base">Elite Squad-2</li>
-        <li class="text-zinc-300 text-sm md:text-base">Exodus: Gods and Kings</li>
-        <li class="text-zinc-300 text-sm md:text-base">prisioners</li>
-        <li class="text-zinc-300 text-sm md:text-base">hannibal</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Town</li>
-        <li class="text-zinc-300 text-sm md:text-base">syriana</li>
-        <li class="text-zinc-300 text-sm md:text-base">body of lies</li>
-        <li class="text-zinc-300 text-sm md:text-base">enemy</li>
-        <li class="text-zinc-300 text-sm md:text-base">good fellas</li>
-        <li class="text-zinc-300 text-sm md:text-base">little bone lodge</li>
-        <li class="text-zinc-300 text-sm md:text-base">the menu</li>
-        <li class="text-zinc-300 text-sm md:text-base">gods crooked line</li>
-        <li class="text-zinc-300 text-sm md:text-base">13 sins</li>
-        <li class="text-zinc-300 text-sm md:text-base">raquem for a dream</li>
-        <li class="text-zinc-300 text-sm md:text-base">midnight</li>
-        <li class="text-zinc-300 text-sm md:text-base">the pledge</li>
-        <li class="text-zinc-300 text-sm md:text-base">nocturnal animals</li>
-        <li class="text-zinc-300 text-sm md:text-base">cam</li>
-        <li class="text-zinc-300 text-sm md:text-base">Nefarious</li>
-        <li class="text-zinc-300 text-sm md:text-base">the skelton key</li>
-        <li class="text-zinc-300 text-sm md:text-base">the fountain</li>
-        <li class="text-zinc-300 text-sm md:text-base">the pale of blue byes</li>
-        <li class="text-zinc-300 text-sm md:text-base">men</li>
-        <li class="text-zinc-300 text-sm md:text-base">justice league snyder cut</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sisters death</li>
-        <li class="text-zinc-300 text-sm md:text-base">Case 39</li>
-        <li class="text-zinc-300 text-sm md:text-base">3:10 to yuma</li>
-        <li class="text-zinc-300 text-sm md:text-base">sister death</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Usual Suspects</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Game</li>
-        <li class="text-zinc-300 text-sm md:text-base">INSOMNIA</li>
-        <li class="text-zinc-300 text-sm md:text-base">priest</li>
-        <li class="text-zinc-300 text-sm md:text-base">The last duel</li>
-        <li class="text-zinc-300 text-sm md:text-base">the hurt lockerr</li>
-        <li class="text-zinc-300 text-sm md:text-base">american made</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Devils Double</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Tenant 1976</li>
-        <li class="text-zinc-300 text-sm md:text-base">The eyes of my mother</li>
-        <li class="text-zinc-300 text-sm md:text-base">Bothers</li>
-        <li class="text-zinc-300 text-sm md:text-base">Nosferatu</li>
-        <li class="text-zinc-300 text-sm md:text-base">uprising</li>
-        <li class="text-zinc-300 text-sm md:text-base">attonement</li>
-        <li class="text-zinc-300 text-sm md:text-base">Léon: The Professional</li>
-        <li class="text-zinc-300 text-sm md:text-base">Villains</li>
-        <li class="text-zinc-300 text-sm md:text-base">Everest</li>
-        <li class="text-zinc-300 text-sm md:text-base">Barry Lyndon</li>
-        <li class="text-zinc-300 text-sm md:text-base">Love and Other Drugs</li>
-        <li class="text-zinc-300 text-sm md:text-base">Blue Valentine</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Count of Monte Cristo</li>
-        <li class="text-zinc-300 text-sm md:text-base">Anna Karenina</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Devils's Violinist</li>
-        <li class="text-zinc-300 text-sm md:text-base">The man in a iron mask</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Seventh Seal</li>
-        <li class="text-zinc-300 text-sm md:text-base">Project Hail ary</li>
-        <li class="text-zinc-300 text-sm md:text-base">Rosemary's baby</li>
-        <li class="text-zinc-300 text-sm md:text-base">Saint Maud</li>
-    </ul>
-</section>
+<div id="movie-categories"></div>
 
-<section class="mb-12 border-l border-zinc-800 hover:border-red-900/50 transition-colors pl-6">
-    <button class="dropdown-toggle w-full flex items-center justify-between text-left text-[12px] sm:text-sm tracking-[0.2em] font-mono text-[#B91C1C] mb-4 font-extrabold uppercase" data-target="average-list">
-        <span>AVERAGE</span>
-        <span class="dropdown-arrow text-lg leading-none">+</span>
-    </button>
-    <ul id="average-list" class="dropdown-content hidden m-0 p-0 list-none space-y-2">
-        <li class="text-zinc-300 text-sm md:text-base">Doctor Sleep</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Big Short</li>
-        <li class="text-zinc-300 text-sm md:text-base">Extraction</li>
-        <li class="text-zinc-300 text-sm md:text-base">Now you see Me-2</li>
-        <li class="text-zinc-300 text-sm md:text-base">47 Ronin</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Platform</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Breed</li>
-        <li class="text-zinc-300 text-sm md:text-base">Enola Holmes</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Dry Valley(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Island(Russian)</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Green Mile</li>
-        <li class="text-zinc-300 text-sm md:text-base">Forest Gump</li>
-        <li class="text-zinc-300 text-sm md:text-base">Rurouni Kenshin</li>
-        <li class="text-zinc-300 text-sm md:text-base">Dumb and Dumber2</li>
-        <li class="text-zinc-300 text-sm md:text-base">Veronica</li>
-        <li class="text-zinc-300 text-sm md:text-base">Men in Black</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Outsider</li>
-        <li class="text-zinc-300 text-sm md:text-base">El Infierno</li>
-        <li class="text-zinc-300 text-sm md:text-base">How High</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Package</li>
-        <li class="text-zinc-300 text-sm md:text-base">Suicide Squad2</li>
-        <li class="text-zinc-300 text-sm md:text-base">F9</li>
-        <li class="text-zinc-300 text-sm md:text-base">Swenney Todd</li>
-        <li class="text-zinc-300 text-sm md:text-base">Army of Thieves</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Guilty</li>
-        <li class="text-zinc-300 text-sm md:text-base">Potrait of the lady on fire</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Portrait Of A Lady (1996)</li>
-        <li class="text-zinc-300 text-sm md:text-base">the old ways</li>
-        <li class="text-zinc-300 text-sm md:text-base">resident evil</li>
-        <li class="text-zinc-300 text-sm md:text-base">kill list</li>
-        <li class="text-zinc-300 text-sm md:text-base">sleeping beauty</li>
-        <li class="text-zinc-300 text-sm md:text-base">MI 7a</li>
-        <li class="text-zinc-300 text-sm md:text-base">the loft</li>
-        <li class="text-zinc-300 text-sm md:text-base">session 9</li>
-        <li class="text-zinc-300 text-sm md:text-base">the last king of scotland</li>
-        <li class="text-zinc-300 text-sm md:text-base">Green Room</li>
-        <li class="text-zinc-300 text-sm md:text-base">promising young woman</li>
-        <li class="text-zinc-300 text-sm md:text-base">Ballerin</li>
-        <li class="text-zinc-300 text-sm md:text-base">bring her back</li>
-        <li class="text-zinc-300 text-sm md:text-base">Weapons</li>
-    </ul>
-</section>
+<div id="movie-categories"></div>
 
-<section class="mb-12 border-l border-zinc-800 hover:border-red-900/50 transition-colors pl-6">
-    <button class="dropdown-toggle w-full flex items-center justify-between text-left text-[12px] sm:text-sm tracking-[0.2em] font-mono text-[#B91C1C] mb-4 font-extrabold uppercase" data-target="poor-list">
-        <span>POOR</span>
-        <span class="dropdown-arrow text-lg leading-none">+</span>
-    </button>
-    <ul id="poor-list" class="dropdown-content hidden m-0 p-0 list-none space-y-2">
-        <li class="text-zinc-300 text-sm md:text-base">His House</li>
-        <li class="text-zinc-300 text-sm md:text-base">Take the 10</li>
-    </ul>
-</section>
-
-<section class="mb-12 border-l border-zinc-800 hover:border-red-900/50 transition-colors pl-6">
-    <button class="dropdown-toggle w-full flex items-center justify-between text-left text-[12px] sm:text-sm tracking-[0.2em] font-mono text-[#B91C1C] mb-4 font-extrabold uppercase" data-target="pending-list">
-        <span>PENDING</span>
-        <span class="dropdown-arrow text-lg leading-none">+</span>
-    </button>
-    <ul id="pending-list" class="dropdown-content hidden m-0 p-0 list-none space-y-2">
-        <li class="text-zinc-300 text-sm md:text-base">Defiance</li>
-        <li class="text-zinc-300 text-sm md:text-base">Son of Saul</li>
-        <li class="text-zinc-300 text-sm md:text-base">Iron Man</li>
-        <li class="text-zinc-300 text-sm md:text-base">Thor</li>
-        <li class="text-zinc-300 text-sm md:text-base">Ragnarok</li>
-        <li class="text-zinc-300 text-sm md:text-base">Avengers</li>
-        <li class="text-zinc-300 text-sm md:text-base">Captain America</li>
-        <li class="text-zinc-300 text-sm md:text-base">Baby Driver</li>
-        <li class="text-zinc-300 text-sm md:text-base">Oculus</li>
-        <li class="text-zinc-300 text-sm md:text-base">Sightless</li>
-        <li class="text-zinc-300 text-sm md:text-base">Kidnapping Stella</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Invisible Guardian</li>
-        <li class="text-zinc-300 text-sm md:text-base">Gone baby Gone</li>
-        <li class="text-zinc-300 text-sm md:text-base">Geralds Game</li>
-        <li class="text-zinc-300 text-sm md:text-base">No One Gets Out Alive</li>
-        <li class="text-zinc-300 text-sm md:text-base">undisputed</li>
-        <li class="text-zinc-300 text-sm md:text-base">end of watch</li>
-        <li class="text-zinc-300 text-sm md:text-base">Salo or The 120 Days of Sodom</li>
-        <li class="text-zinc-300 text-sm md:text-base">s darko</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Box</li>
-        <li class="text-zinc-300 text-sm md:text-base">Southland Tales</li>
-        <li class="text-zinc-300 text-sm md:text-base">corpus cristi</li>
-        <li class="text-zinc-300 text-sm md:text-base">openheimer</li>
-        <li class="text-zinc-300 text-sm md:text-base">benediction</li>
-        <li class="text-zinc-300 text-sm md:text-base">the babadook</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Night House</li>
-        <li class="text-zinc-300 text-sm md:text-base">Censor</li>
-        <li class="text-zinc-300 text-sm md:text-base">Mother</li>
-        <li class="text-zinc-300 text-sm md:text-base">Antichrist</li>
-        <li class="text-zinc-300 text-sm md:text-base">Only God Forgives</li>
-        <li class="text-zinc-300 text-sm md:text-base">The Neon Demon</li>
-        <li class="text-zinc-300 text-sm md:text-base">Alpha Dog</li>
-        <li class="text-zinc-300 text-sm md:text-base">Thirteen</li>
-        <li class="text-zinc-300 text-sm md:text-base">heaven knows what</li>
-        <li class="text-zinc-300 text-sm md:text-base">good time</li>
-        <li class="text-zinc-300 text-sm md:text-base">paradise</li>
-        <li class="text-zinc-300 text-sm md:text-base">Cabin in the Woods</li>
-        <li class="text-zinc-300 text-sm md:text-base">saltburn</li>
-        <li class="text-zinc-300 text-sm md:text-base">nope</li>
-        <li class="text-zinc-300 text-sm md:text-base">would you rather</li>
-        <li class="text-zinc-300 text-sm md:text-base">the seasoning house</li>
-        <li class="text-zinc-300 text-sm md:text-base">dampyr</li>
-        <li class="text-zinc-300 text-sm md:text-base">damsel</li>
-        <li class="text-zinc-300 text-sm md:text-base">mr nobody</li>
-        <li class="text-zinc-300 text-sm md:text-base">the lobster</li>
-        <li class="text-zinc-300 text-sm md:text-base">big fish</li>
-        <li class="text-zinc-300 text-sm md:text-base">Piiggy</li>
-        <li class="text-zinc-300 text-sm md:text-base">THE BIKERIDERS</li>
-        <li class="text-zinc-300 text-sm md:text-base">the da vinci code</li>
-        <li class="text-zinc-300 text-sm md:text-base">the binding</li>
-        <li class="text-zinc-300 text-sm md:text-base">Detachment</li>
-        <li class="text-zinc-300 text-sm md:text-base">Cure</li>
-        <li class="text-zinc-300 text-sm md:text-base">A Bittersweet Life</li>
-        <li class="text-zinc-300 text-sm md:text-base">Moss</li>
-        <li class="text-zinc-300 text-sm md:text-base">Life</li>
-    </ul>
-</section>
+<div id="movie-categories"></div>
 
 <script>
-(function () {
-    const sections = document.querySelectorAll('section');
-    let totalMovies = 0;
+(async function () {
+    const container = document.getElementById("movie-categories");
+    const totalNode = document.getElementById("total-movies-count");
 
-    sections.forEach((section) => {
-        const items = Array.from(section.querySelectorAll('li'));
-        totalMovies += items.length;
+    try {
+        const response = await fetch("movies.json");
+        if (!response.ok) throw new Error("Failed to load movies");
 
-        const heading = section.querySelector('.dropdown-toggle');
-        if (heading) {
-            const label = heading.querySelector('span');
-            if (label) {
-                label.textContent = `${label.textContent.trim()} (${items.length})`;
-            }
-        }
-    });
+        const categories = await response.json();
+        const totalMovies = Object.values(categories).reduce((sum, movies) => sum + movies.length, 0);
+        totalNode.textContent = String(totalMovies);
 
-    const totalNode = document.getElementById('total-movies-count');
-    if (totalNode) totalNode.textContent = String(totalMovies);
+        Object.entries(categories).forEach(([name, movies]) => {
+            const listId = name.toLowerCase() + "-list";
+            const section = document.createElement("section");
+            section.className = "mb-12 border-l border-zinc-800 hover:border-red-900/50 transition-colors pl-6";
 
-    document.querySelectorAll('.dropdown-toggle').forEach((button) => {
-        button.addEventListener('click', () => {
-            const targetId = button.getAttribute('data-target');
-            const content = document.getElementById(targetId);
-            const arrow = button.querySelector('.dropdown-arrow');
-            const isHidden = content.classList.contains('hidden');
+            const button = document.createElement("button");
+            button.className = "dropdown-toggle w-full flex items-center justify-between text-left text-[12px] sm:text-sm tracking-[0.2em] font-mono text-[#B91C1C] mb-4 font-extrabold uppercase";
+            button.type = "button";
+            button.dataset.target = listId;
 
-            document.querySelectorAll('.dropdown-content').forEach((el) => {
-                if (el !== content) {
-                    el.classList.add('hidden');
-                }
+            const label = document.createElement("span");
+            label.textContent = name + " (" + movies.length + ")";
+            const arrow = document.createElement("span");
+            arrow.className = "dropdown-arrow text-lg leading-none";
+            arrow.textContent = "+";
+            button.append(label, arrow);
+
+            const list = document.createElement("ul");
+            list.id = listId;
+            list.className = "dropdown-content hidden m-0 p-0 list-none space-y-2";
+            movies.forEach((title) => {
+                const item = document.createElement("li");
+                item.className = "text-zinc-300 text-sm md:text-base";
+                item.textContent = title;
+                list.appendChild(item);
             });
 
-            document.querySelectorAll('.dropdown-arrow').forEach((el) => {
-                if (el !== arrow) {
-                    el.textContent = '+';
-                }
+            button.addEventListener("click", () => {
+                const isHidden = list.classList.contains("hidden");
+                container.querySelectorAll(".dropdown-content").forEach((otherList) => {
+                    if (otherList !== list) otherList.classList.add("hidden");
+                });
+                container.querySelectorAll(".dropdown-arrow").forEach((otherArrow) => {
+                    if (otherArrow !== arrow) otherArrow.textContent = "+";
+                });
+                list.classList.toggle("hidden", !isHidden);
+                arrow.textContent = isHidden ? "−" : "+";
             });
 
-            content.classList.toggle('hidden', !isHidden);
-            arrow.textContent = isHidden ? '−' : '+';
+            section.append(button, list);
+            container.appendChild(section);
         });
-    });
+    } catch (error) {
+        container.textContent = "Unable to load the movie archive.";
+        console.error("Error loading movies:", error);
+    }
 })();
 </script>
